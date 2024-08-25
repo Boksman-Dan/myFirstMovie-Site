@@ -1,4 +1,6 @@
 function BMICalc(){
+    document.getElementById("demo1").classList.remove("demo1Animate");
+    document.getElementById("demo1").innerHTML= " ";
     var userHeight = prompt("What is your height in meters");
     while(isNaN(userHeight) === true || userHeight === null) {
         userHeight = prompt("Invalid input! Please enter a Number. What is your height in meters")
@@ -22,7 +24,7 @@ function BMICalc(){
     }
 }
 function loveMatch() {
-    document.getElementById("demo1").classList.remove("demo1Animate")
+    document.getElementById("demo1").classList.remove("demo1Animate");
     document.getElementById("demo1").innerHTML="We're about to Find out what your supposed crush think of you";
     /*
     
@@ -57,6 +59,8 @@ function loveMatch() {
     }
 }
 function leapYear() {
+    document.getElementById("demo1").classList.remove("demo1Animate");
+    document.getElementById("demo1").innerHTML= " ";
     var year = prompt("State the year");
     while(isNaN(year) === true || year === null) {
         year = prompt("Invalid input! Please enter a Number.")
@@ -76,6 +80,8 @@ function leapYear() {
     }
 }
 function fizzBuzz(){
+    document.getElementById("demo1").classList.remove("demo1Animate");
+    document.getElementById("demo1").innerHTML= " ";
     var fbArray = [];
     let x = 0;
     while (x <= 30) {
@@ -89,7 +95,8 @@ function fizzBuzz(){
             fbArray.push(x);
         }
         x++ ;
-        console.log(fbArray)
+        console.log(fbArray);
+        document.getElementById("demo1").innerHTML= fbArray
     }
 }
 
@@ -114,3 +121,17 @@ for (let i = 0; i <= days.length; i++) {
     dateNowEl.innerHTML = `Today is: ${days[i]}`;
   }
 }
+/*
+//change css file
+function changeCssFile() {
+    document.getElementById("stylesheet").href="./Movie Site2.css";
+    document.getElementById("LightMode").style.visibility="hidden";
+    document.getElementById("DarkMode").style.visibility="visible";
+    //document.getElementById("stylesheet").setAttribute("href", "./Movie Site2.css")
+}
+function changeCssFile2() {
+    document.getElementById("stylesheet").href="./Movie Site.css";
+    document.getElementById("DarkMode").style.visibility="hidden";
+    document.getElementById("LightMode").style.visibility="visible";
+    //document.getElementById("stylesheet").setAttribute("href", "./Movie Site2.css")
+}*/
